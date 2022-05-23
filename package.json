@@ -1,0 +1,14 @@
+{
+  "name": "cerebro-build",
+  "type": "module",
+  "version": "1.0.0",
+  "bin": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "esbuild": "0.14.39",
+    "esbuild-css-modules-plugin": "2.2.16"
+  },
+  "engines": {
+    "node": ">=14.8"
+  }
+}
