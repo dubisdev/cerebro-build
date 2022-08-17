@@ -1,14 +1,10 @@
-import path from "path";
+import path from "node:path";
 const dist = path.resolve("dist");
-
-process.on("unhandledRejection", (err) => {
-  throw err;
-});
 
 import fs from "fs-extra";
 
 if (fs.existsSync(dist)) {
-  console.log(`Removing ${dist}...`);
+  console.log(`🚮 Removing ${dist}...`);
   fs.removeSync(dist);
-  console.log(`Done!`);
+  console.log(`✅ Removed!`);
 }
