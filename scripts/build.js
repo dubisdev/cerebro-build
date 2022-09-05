@@ -17,7 +17,7 @@ console.log("⌛ Creating plugin bundle...");
 esbuild
   .build({
     logLevel: "info",
-    entryPoints: ["src/index.tsx"],
+    entryPoints: ["./src/index.js"],
     bundle: true,
     minify: true,
     format: "cjs",
