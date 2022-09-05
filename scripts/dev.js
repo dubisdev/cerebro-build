@@ -11,7 +11,7 @@ const homeDir = os.homedir();
 const pluginName = pkgJson.name;
 
 const macosPath = path.join(homeDir, "Library", "Application Support", appName, "plugins", "node_modules", pluginName);
-const windowsPath = path.join( process.env.APPDATA, appName, "plugins", "node_modules", pluginName);
+const windowsPath = path.join(process.env.APPDATA, appName, "plugins", "node_modules", pluginName);
 const linuxPath = path.join(homeDir, ".config", appName, "plugins", "node_modules", pluginName);
 
 const symlinkPaths = {
